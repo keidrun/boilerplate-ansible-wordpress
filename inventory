@@ -1,0 +1,9 @@
+[web_servers]
+node01 ansible_user=ubuntu
+
+[db_servers]
+node02 ansible_user=ubuntu
+
+[all_servers:children]
+web_servers
+db_servers
